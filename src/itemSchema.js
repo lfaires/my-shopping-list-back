@@ -1,7 +1,8 @@
-import joi from 'joi';
+import Joi from 'joi';
 
-const schema = joi.object({
-    text: joi.string()
+const schema = Joi.object({
+    text: Joi.string()
+        .trim()
         .min(3)
 })
 
